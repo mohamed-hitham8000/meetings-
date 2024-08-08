@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #meeting-container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #video-container {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #chat-container {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow-y: auto;
+        }
+        #chat-log {
+            padding: 10px;
+        }
+        #message-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        #send-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #record-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FF69B4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #invite-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #337AB7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #invite-code-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="meeting-container">
+        <h2>Meetings</h2>
+        <div id="video-container">
+            <video id="video" autoplay playsinline></video>
+        </div>
+        <div id="chat-container">
+            <div id="chat-log"></div>
+            <input id="message-input" type="text" placeholder="Type a message...">
+            <button id="send-button">Send</button>
+            <button id="record-button">Record Screen</button>
+            <button id="invite-button">Invite People</button>
+            <input id="invite-code-input" type="text" placeholder="Enter invite code...">
+            <button id="join-button">Join Meeting</button>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
